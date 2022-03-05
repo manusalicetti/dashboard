@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/styles.css" />
-    <script src="https://kit.fontawesome.com/7a2d0432e3.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4a762e4b65.js" crossorigin="anonymous"></script>
     <title>Dashboard</title>
   </head>
   <body class="body">
@@ -43,12 +43,71 @@
     </header>
     <main class="main">
       <div class="toolbar">
-        <div class="toolbar-box">
-          <div class="toolbar-box__search"></div>
-          <div class="toolbar-box__misc"></div>
+        <div class="toolbar__search">
+          <div class="toolbar__search-bar">
+            <img class="toolbar__search-icon" src="images/icons/search.png" alt="Search Icon" />
+            <form action="get">
+              <input class="search-bar__input" type="text" />
+            </form>
+          </div>
+          <div class="toolbar__search-information">
+            <img class="toolbar__search-icon" src="/images/icons/bell.png" alt="Bell Icon" />
+            <img class="search-information-cat" src="/images/icons/cat.svg" alt="Cat Icon" />
+            <span class="search-information__text">Morgan Oakley</span>
+          </div>
+        </div>
+
+        <div class="toolbar__misc">
+          <div class="toolbar__misc-userbox">
+            <img class="misc-userbox-cat" src="/images/icons/cat.svg" alt="Cat Icon" />
+            <div class="userbox__text">
+              <p class="userbox__text-greetings">Hi there,</p>
+              <p class="userbox__text-info">Morgan Oakley (@morgan)</p>
+            </div>
+          </div>
+          <ul class="toolbar__misc-submenu">
+            <li class="misc-submenu__item"><a href="/#" class="misc-submenu-link">New</a></li>
+            <li class="misc-submenu__item"><a href="/#" class="misc-submenu-link">Upload</a></li>
+            <li class="misc-submenu__item"><a href="/#" class="misc-submenu-link">Share</a></li>
+          </ul>
         </div>
       </div>
-      <section class="main-content"></section>
+      <section class="main-content">
+        <div class="gallery-box">
+          <h2 class="gallery-box__title main-content__titles">Your Projects</h2>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar__announcements">
+            <h2 class="annoucements-title main-content__titles">Announcements</h2>
+            <div class="announcements">
+              <div class="announcements__announcement">
+                <h3 class="announcement__title">Site Mantenance</h3>
+                <p class="announcement__text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit excepturi dignissimos rem impedit vero repudiandae repellat itaque
+                  in maiores corrupti!
+                </p>
+              </div>
+              <div class="announcements__announcement">
+                <h3 class="announcement__title">Comunity Share Day</h3>
+                <p class="announcement__text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit excepturi dignissimos rem impedit vero repudiandae repellat itaque
+                  in maiores corrupti!
+                </p>
+              </div>
+              <div class="announcements__announcement">
+                <h3 class="announcement__title">Updated Privacy Policy</h3>
+                <p class="announcement__text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit excepturi dignissimos rem impedit vero repudiandae repellat itaque
+                  in maiores corrupti!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar__trending">
+            <h2 class="trending-title main-content__titles">Trending</h2>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
